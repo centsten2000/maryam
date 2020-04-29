@@ -50,6 +50,14 @@ html, body {
     margin: 15px;
 }
 
+#moth-image-wrapper {
+
+}
+
+#moth-image {
+	max-width: 100%;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...}
 

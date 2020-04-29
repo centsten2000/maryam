@@ -1,3 +1,18 @@
+@font-face {
+  font-family:"FagHagBlack";
+  src: url("assets/FagHagBlack2.otf") format("truetype");
+}
+
+@font-face {
+  font-family:"Luxembourg";
+  src: url("assets/luxembourg.TTF") format("truetype");
+}
+
+@font-face {
+  font-family:"Yolda";
+  src: url("assets/YOLDA___.TTF") format("truetype");
+}
+
 :root {
 	--summer-green: #8eb8a2;
 	--bay-leaf: #83b195;
@@ -8,3 +23,38 @@
 	--tana: #d8d9ba;
 	--chino: #cecba2;
 }
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.page-wrapper {
+	min-height: 100%;
+	background-color: var(--tana);
+	position: relative;
+}
+
+.tile {
+	background-color: var(--bay-leaf);
+	position: absolute;
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+}
+
+.header-text {
+	font-family: FagHagBlack;
+    font-size: xx-large;
+    margin: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}

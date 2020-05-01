@@ -16,6 +16,11 @@
         width:150px;
     }
 
+    .form-single-column {
+    	display: flex;
+    	flex-direction: column;
+	}	
+
     .form-all{
         margin:0px auto;
         padding-top:20px;
@@ -26,6 +31,10 @@
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
         color: false;
     }
+
+    span.form-required {
+    	color: var(--tall-poppy);
+	}
 
 </style>
 
@@ -154,28 +163,12 @@
 .form-matrix-table tr:nth-child(2n) {
   background-color: #f2f2f2;
 }
-.form-all {
-  color: #555555;
-}
-.form-header-group .form-header {
-  color: #555555;
-}
-.form-header-group .form-subHeader {
-  color: #6f6f6f;
-}
 .form-sub-label {
-  color: #6f6f6f;
+	color: #6f6f6f;
+	display: block;
+	font-size: small;
 }
-.form-label-top,
-.form-label-left,
-.form-label-right,
-.form-html {
-  color: #555555;
-}
-.form-checkbox-item label,
-.form-radio-item label {
-  color: #6f6f6f;
-}
+
 .form-line.form-line-active {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -788,7 +781,7 @@ li[data-type="control_image"] img {
 					      <li class="form-line" data-type="control_text" id="id_39">
 					        <div id="cid_39" class="form-input-wide">
 					          <div id="text_39" class="form-html" data-component="text">
-					            <p style="text-align: justify;"><span >Hello! Welcome to my online booking request form! This helps me organize my life and helps me better understand what you're looking for in a tattoo!</span><br /><br /><span >I currently work out of Outsider Collective, a safe space in the heart of Chinatown, close to the downtown core. The address is 441 Gore st.<br /></span><br /><span >My rate is $135 per hour. Most tattoos take between 1-3 hours. :) If you have budgetary needs or restrictions, feel free to mention that. I have done staggered payments/ sessions in the past for clients.<br /></span><br /><span >I take a deposit of $50 upon tattoo confirmation to my email - <a href="mailto:bloodmothtattoos@gmail.com" target="_blank" rel="nofollow">bloodmothtattoos@gmail.com</a> This amount will be subtracted off the final cost of your tattoo. This is non refundable unless in case of emergency.<br /><br />Tips are always appreciated but never expected! Tips usually ring in at 10-15%.</span><br /><br /><span style="font-family: book antiqua, palatino, serif;"><span >Please be as descriptive as you can filling out this form! I look forward to hearing your ideas</span>!</span><br /></p>
+					            <p style="text-align: justify;"><span >Hello! Welcome to my online booking request form! This helps me organize my life and helps me better understand what you're looking for in a tattoo!</span><br /><br /><span >I currently work out of Outsider Collective, a safe space in the heart of Chinatown, close to the downtown core. The address is 441 Gore st.<br /></span><br /><span >My rate is $135 per hour. Most tattoos take between 1-3 hours. :) If you have budgetary needs or restrictions, feel free to mention that. I have done staggered payments/ sessions in the past for clients.<br /></span><br /><span >I take a deposit of $50 upon tattoo confirmation to my email - <a href="mailto:bloodmothtattoos@gmail.com" target="_blank" rel="nofollow">bloodmothtattoos@gmail.com</a> This amount will be subtracted off the final cost of your tattoo. This is non refundable unless in case of emergency.<br /><br />Tips are always appreciated but never expected! Tips usually ring in at 10-15%.</span><br /><br /><span><span >Please be as descriptive as you can filling out this form! I look forward to hearing your ideas</span>!</span><br /></p>
 					          </div>
 					        </div>
 					      </li>

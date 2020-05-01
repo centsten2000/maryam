@@ -52,7 +52,6 @@
 html, body {
 	height: 100%;
 	margin: 0;
-	overflow: hidden;
 	font-family: MuktaVaani;
 }
 
@@ -87,6 +86,12 @@ a {
     flex-direction: column;
 }
 
+.footer-social-icons {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
 #index-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -115,6 +120,18 @@ a {
 #newsletter-submit {
     border: 2px solid;
     font-family: MuktaVaani;
+}
+
+#email-input {
+    border: 1px solid;
+}
+
+#instagram-feed1 {
+	margin: 16px;
+}
+
+#hack-text {
+	color: white;
 }
 
 /* Extra small devices (phones, 600px and down) */

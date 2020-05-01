@@ -55,15 +55,19 @@ a {
     margin: 15px;
 }
 
-#moth-image-wrapper {
+#index-content-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #moth-image {
-	position: absolute;
-    max-height: 60%;
-    max-width: 100%;
+    width: 20%;
+    z-index: 0;
+}
+
+#newsletter-form-wrapper {
+	z-index: 10;
 }
 
 /* Extra small devices (phones, 600px and down) */

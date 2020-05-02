@@ -142,25 +142,25 @@ li {
 	color: white;
 }
 
-.booking-form-wrapper {
-	/*margin: 50px 178px;*/
+.footer-wrapper {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+    width: 100%;	
+    font-size: small;
 }
 
-/*.form-line {
-    margin: 20px 0;
+.footer-block {
+	width: 250px;
+	text-align: center;
+	margin-top: auto;
 }
 
-.form-sub-label {
-    display: block;
+.address-wrapper {
+	align-items: center;
 }
 
-.form-textbox {
-    width: 21%;
-}
-
-.form-textarea {
-    width: 50%;
-}*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...}

@@ -88,7 +88,8 @@ input:focus {
 }
 
 .header {
-  margin: 35px;
+  margin-top: 45px;
+  margin-left: 55px;
 }
 
 .header-text {
@@ -159,12 +160,15 @@ input:focus {
 }
 
 .footer-wrapper {
-	margin-top: 50px;
+	margin-top: 70px;
 	margin-bottom: 30px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
   width: 100%;	
   font-size: small;
+  font-weight: lighter;
+  border-top: 1px solid black;
+  padding-top: 25px;
 }
 
 .footer-block {
@@ -182,17 +186,17 @@ input:focus {
 }
 
 .question {
-  font-weight: bolder;
+  font-weight: lighter;
 }
 
 .answer {
   font-weight: lighter;
-  color: #000000d1;
+  color: #000000ad;
 }
 
 #faq-content-wrapper {
   margin-bottom: 30px;
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .answer.highlight-text,
@@ -206,11 +210,15 @@ input:focus {
 }
 
 .booking-form-wrapper {
-  margin-top: -72px;
+  margin-top: -43px;
+}
+
+.italic {
+  font-style: italic;
 }
 
 span.menu-item {
-  font-family: MuktaVaani;
+
 }
 
 /* Extra small devices (phones, 600px and down) */

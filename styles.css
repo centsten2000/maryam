@@ -57,8 +57,9 @@
 html, body {
 	height: 100%;
 	margin: 0;
-    font-weight: 600;
+  font-weight: 600;
 	font-family: MuktaVaani;
+  /*background-color: var(--tall-poppy);*/
 }
 
 a {
@@ -77,15 +78,16 @@ input:focus {
 	    box-shadow: 0 0 4px var(--kimberly);
 }
 
-.page-wrapper {
-	min-height: 100%;
-	background-color: white;
-	position: relative;
+/*for tile styling*/
+/*.tile {
+  background-color: var(--tall-poppy);
+  margin: 33px;
 }
 
-.tile {
-	background-color: white;
-}
+.header {
+  margin-left: 33px;
+  padding-top: 33px;
+}*/
 
 .header {
   margin-top: 45px;
@@ -102,7 +104,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     font-family: MuktaVaani-Light;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .footer-social-icons {
@@ -139,7 +141,7 @@ input:focus {
     margin-top: 2px;
 }
 
-#booking-button:hover {
+button:hover {
 	background-color: lightgray;
 }
 
@@ -156,7 +158,6 @@ input:focus {
 }
 
 #instagram-feed1 {
-	
 }
 
 .footer-wrapper {
@@ -206,7 +207,6 @@ input:focus {
 
 .active {
   border-bottom: 2px solid var(--kimberly);
-  padding-right: 10px;
 }
 
 .booking-form-wrapper {
@@ -217,8 +217,8 @@ input:focus {
   font-style: italic;
 }
 
-span.menu-item {
-
+li#id_42 {
+  padding: 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -230,7 +230,18 @@ span.menu-item {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
 
+@media only screen and (max-width: 920px) {
+  .booking-form-wrapper {
+    margin-top: 0px;
+    margin-left: 55px;
+  }
 
+  #faq-content-wrapper {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 55px;
+  }
+}
 
 
 /*jotform source css*/
@@ -462,10 +473,6 @@ span.menu-item {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
-}
-.form-line {
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 
 .form-all .qq-upload-button,

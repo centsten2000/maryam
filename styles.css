@@ -54,6 +54,19 @@
 	--chino: #cecba2;
 }
 
+@keyframes textAppear {
+  0%   {color: white;}
+  50%  {color: gray;}
+  100% {color: #000000ad;}
+}
+
+li,
+.answer,
+.form-all {
+  animation-name: textAppear;
+  animation-duration: 0.4s;
+}
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -157,9 +170,6 @@ button:hover {
     border: 1px solid;
 }
 
-#instagram-feed1 {
-}
-
 .footer-wrapper {
 	margin-top: 70px;
 	margin-bottom: 30px;
@@ -168,7 +178,7 @@ button:hover {
   width: 100%;	
   font-size: small;
   font-weight: lighter;
-  border-top: 1px solid black;
+  /*border-top: 1px solid black;*/
   padding-top: 25px;
 }
 
@@ -219,6 +229,14 @@ button:hover {
 
 li#id_42 {
   padding: 0;
+}
+
+.footer-image-wrapper {
+  text-align: center;
+}
+
+.footer-image {
+  max-width: 300px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -401,24 +419,6 @@ li#id_42 {
   font-size: small;
 }
 
-.form-line.form-line-active {
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  -ms-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
-  background-color: #ffffe0;
-}
 /* omer */
 .form-radio-item,
 .form-checkbox-item {

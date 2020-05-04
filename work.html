@@ -34,7 +34,10 @@
 					</div>
 				</div>
 				<div id="instagram-feed1" class="form-all"></div>
-				<div class="footer-wrapper">
+				<div class="footer-image-wrapper">
+					<img class="footer-image" src="assets/peony.png">
+				</div>
+				<div id="work-footer" class="footer-wrapper" style="display:none">
 					<div class="social-wrapper footer-block">
 						<a href="https://www.instagram.com/blood.moth/">
 							
@@ -79,5 +82,13 @@
 	            'margin': 1 
 	        });
 	    })();
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		  setTimeout(function(){
+		    $('#work-footer').show();
+		  },2000);
+		});
 	</script>
 </html>

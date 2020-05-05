@@ -246,75 +246,6 @@ li#id_42 {
   max-width: 300px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header-text {
-    font-size: 60px;
-  }
-
-  .menu-wrapper {
-    margin-top: 25px;
-    font-size: xx-large;
-  }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-  #moth-image {
-      width: 100%;
-  }
-
-  .header-text {
-    font-size: 30px;
-  }
-
-  .menu-wrapper {
-    margin-top: 25px;
-    font-size: large;
-  }
-
-  .tile {
-    margin: 26px;
-  }
-
-  .header {
-    margin-top: 0px; 
-    margin-left: 11px;
-    padding-top: 33px;
-  }
-
-  .footer-wrapper {
-    padding-top: 10px;
-    flex-direction: column;
-  }
-
-  .footer-block {
-    width: unset;
-    margin-bottom: 20px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-@media only screen and (max-width: 920px) {
-  .booking-form-wrapper {
-    margin-top: 0px;
-    margin-left: 55px;
-  }
-
-  #faq-content-wrapper {
-    margin-bottom: 30px;
-    margin-top: 0px;
-    margin-left: 55px;
-  }
-
-  .form-all {
-    margin-left: 33px;
-  }
-}
-
 /*jotform source css*/
 
     .form-label-left{
@@ -712,3 +643,82 @@ li[data-type="control_image"] img {
     margin-top: auto;
     margin-top: initial;
   }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header-text {
+    font-size: 60px;
+  }
+
+  .menu-wrapper {
+    margin-top: 25px;
+    font-size: xx-large;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  #moth-image {
+      width: 100%;
+  }
+
+  .header-text {
+    font-size: 30px;
+  }
+
+  .menu-wrapper {
+    margin-top: 25px;
+    font-size: large;
+  }
+
+  .tile {
+    margin: 26px;
+  }
+
+  .header {
+    margin-top: 0px; 
+    margin-left: 11px;
+    padding-top: 33px;
+  }
+
+  .footer-wrapper {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+
+  .footer-block {
+    width: unset;
+    margin-bottom: 20px;
+  }
+
+  .form-all {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  #faq-content-wrapper,
+  .booking-form-wrapper {
+    margin-top: 2px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+@media only screen and (max-width: 920px) {
+/*  .booking-form-wrapper {
+    margin-top: 0px;
+    margin-left: 55px;
+  }
+
+  #faq-content-wrapper {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 55px;
+  }
+
+  .form-all {
+    margin-left: 33px;
+  }*/
+}

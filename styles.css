@@ -170,6 +170,7 @@ button:hover {
     text-decoration: underline;
     padding-top: 1px;
     background-color: white;
+    -webkit-appearance: none;
 }
 
 #email-input {
@@ -263,8 +264,8 @@ li#id_42 {
   #moth-image {
       width: 100%;
   }
-  
-    .header-text {
+
+  .header-text {
     font-size: 30px;
   }
 

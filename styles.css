@@ -169,6 +169,7 @@ button:hover {
     font-weight: bolder;
     text-decoration: underline;
     padding-top: 1px;
+    background-color: white;
 }
 
 #email-input {
@@ -259,6 +260,10 @@ li#id_42 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  #moth-image {
+      width: 100%;
+  }
+  
     .header-text {
     font-size: 30px;
   }
@@ -274,7 +279,7 @@ li#id_42 {
 
   .header {
     margin-top: 0px; 
-    margin-left: 20px;
+    margin-left: 11px;
     padding-top: 33px;
   }
 

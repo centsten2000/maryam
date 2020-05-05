@@ -75,6 +75,11 @@ html, body {
   /*background-color: var(--tall-poppy);*/
 }
 
+/*body {
+  background-image: url("assets/icon.png");
+  background-repeat: repeat;
+}*/
+
 a {
     color: black;
     text-decoration: none;
@@ -92,15 +97,15 @@ input:focus {
 }
 
 /*for tile styling*/
-/*.tile {
-  background-color: var(--tall-poppy);
-  margin: 33px;
+.tile {
+  background-color: white;
+  margin: 35px;
 }
 
 .header {
   margin-left: 33px;
   padding-top: 33px;
-}*/
+}
 
 .header {
   margin-top: 45px;
@@ -258,6 +263,10 @@ li#id_42 {
     margin-bottom: 30px;
     margin-top: 0px;
     margin-left: 55px;
+  }
+
+  .form-all {
+    margin-left: 33px;
   }
 }
 
@@ -464,16 +473,6 @@ li#id_42 {
   background-image: url("https://www.jotform.com/uploads/bloodmoth/form_files/fullsizeoutput_40b.jpeg");
 }
 /* | */
-.form-all {
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
-}
-.form-header-group {
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
-}
 
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
@@ -556,7 +555,6 @@ li[data-type="control_image"] img {
   width: auto;
 }
 .form-line-error {
-  overflow: hidden;
   -webkit-transition-property: none;
   -moz-transition-property: none;
   -ms-transition-property: none;

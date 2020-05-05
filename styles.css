@@ -245,10 +245,49 @@ li#id_42 {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+  .header-text {
+    font-size: 60px;
+  }
+
+  .menu-wrapper {
+    margin-top: 25px;
+    font-size: xx-large;
+  }
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+    .header-text {
+    font-size: 30px;
+  }
+
+  .menu-wrapper {
+    margin-top: 25px;
+    font-size: large;
+  }
+
+  .tile {
+    margin: 26px;
+  }
+
+  .header {
+    margin-top: 0px; 
+    margin-left: 20px;
+    padding-top: 33px;
+  }
+
+  .footer-wrapper {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+
+  .footer-block {
+    width: unset;
+    margin-bottom: 20px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
@@ -269,7 +308,6 @@ li#id_42 {
     margin-left: 33px;
   }
 }
-
 
 /*jotform source css*/
 

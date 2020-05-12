@@ -77,18 +77,20 @@ html, body {
 	margin: 0;
   font-weight: 600;
 	font-family: MuktaVaani;
-  cursor: url("assets/icon.png"), auto;
-  /*background-color: var(--tall-poppy);*/
+  cursor: url("assets/icon.png"), 0 10, auto;
 }
-
-/*body {
-  background-image: url("assets/icon.png");
-  background-repeat: repeat;
-}*/
 
 a {
     color: black;
     text-decoration: none;
+}
+
+.menu-wrapper a {
+  color: grey;
+}
+
+.menu-wrapper a.active {
+  color: black;
 }
 
 li {
@@ -107,8 +109,27 @@ input:focus {
   justify-content: space-between;
 }
 
-.page-wrapper.thanks-wrapper {
+.thanks-wrapper {
+  background-image: url("assets/yingyang.png");
+  background-repeat: repeat;
   height: 100%;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.thanks-card {
+  text-align: center;
+  font-size: 14px;
+  background-color: #fffffffa;
+  margin-bottom: 80px;
+  padding: 10px 20px 0px 20px;
+}
+
+.home-navigation-wrapper {
+  font-size: 15px;
+  margin: 33px;
 }
 
 .border-strip {
@@ -147,11 +168,32 @@ input:focus {
   cursor: pointer;
 }
 
+.form-all .header {
+  margin-left: 0px;
+}
+
 .menu-wrapper {
     display: flex;
     flex-direction: column;
     font-family: MuktaVaani-Light;
     margin-top: 12px;
+    font-size: 14px;
+}
+
+.menu-active-image {
+  width: 18px;
+}
+
+.menu-active-image-wrapper {
+  margin-right: 4px;
+  margin-left: -25px;
+  width: 0;
+  position: relative; top: 2.5px;
+}
+
+.menu-active-span {
+  margin-top: 3px;
+  color: black;
 }
 
 .footer-social-icons {
@@ -253,14 +295,6 @@ button:hover {
 .answer.highlight-text,
 .highlight-text {
   color: var(--kimberly);
-}
-
-.active {
-  border-bottom: 2px solid var(--kimberly);
-}
-
-.booking-form-wrapper {
-  /*margin-top: -43px;*/
 }
 
 .italic {

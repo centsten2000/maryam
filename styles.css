@@ -43,6 +43,11 @@
   src: url("assets/UnifrankturMaguntia-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family:"broken_planew";
+  src: url("assets/broken_planew.ttf") format("truetype");
+}
+
 :root {
 	--summer-green: #8eb8a2;
 	--bay-leaf: #83b195;
@@ -72,6 +77,7 @@ html, body {
 	margin: 0;
   font-weight: 600;
 	font-family: MuktaVaani;
+  cursor: url("assets/icon.png"), auto;
   /*background-color: var(--tall-poppy);*/
 }
 
@@ -91,15 +97,38 @@ li {
 }
 
 input:focus {
-	    outline: none !important;
-	    border: 4px solid var(--kimberly);
-	    box-shadow: 0 0 4px var(--kimberly);
+  outline: none !important;
+  border: 4px solid var(--kimberly);
+  box-shadow: 0 0 4px var(--kimberly);
 }
 
-/*for tile styling*/
+.page-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-wrapper.thanks-wrapper {
+  height: 100%;
+}
+
+.border-strip {
+  width: 28px;
+}
+
+#border-left {
+  background-image: url(assets/borderTile.png);
+  background-repeat: repeat-y;
+}
+
+#border-right {
+  background-image: url(assets/borderTileRight.png);
+  background-repeat: repeat-y;
+}
+
 .tile {
-  background-color: white;
-  margin: 35px;
+  /*background-color: #f1f1f1;*/
+  /*border: 3px solid black;*/
+  /*margin: 35px;*/
 }
 
 .header {
@@ -109,13 +138,13 @@ input:focus {
 
 .header {
   margin-top: 45px;
-  margin-left: 55px;
+  /*margin-left: 55px;*/
 }
 
 .header-text {
-	font-family: FagHagBlack;
-    font-size: xx-large;
-    cursor: pointer;
+  font-family: FagHagBlack;
+  font-size: xx-large;
+  cursor: pointer;
 }
 
 .menu-wrapper {
@@ -145,7 +174,7 @@ input:focus {
 #newsletter-form-wrapper {
 	z-index: 10;
 	background-color: white;
-  border: 4px solid #000;
+  border: 3px solid #000;
   padding: 2px 60px;
   margin-top: 28px;
 }
@@ -214,7 +243,11 @@ button:hover {
 
 #faq-content-wrapper {
   margin-bottom: 30px;
-  margin-top: -30px;
+  /*margin-top: -30px;*/
+}
+
+#work-content-wrapper {
+  margin-top: 28px;
 }
 
 .answer.highlight-text,
@@ -227,7 +260,7 @@ button:hover {
 }
 
 .booking-form-wrapper {
-  margin-top: -43px;
+  /*margin-top: -43px;*/
 }
 
 .italic {
@@ -699,6 +732,14 @@ li[data-type="control_image"] img {
   #faq-content-wrapper,
   .booking-form-wrapper {
     margin-top: 2px;
+  }
+
+  #newsletter-form-wrapper {
+    padding: 0px 35px;
+  }
+
+  #booking-button {
+    margin-top: 5px;
   }
 
 }

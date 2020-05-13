@@ -4,21 +4,6 @@
 }
 
 @font-face {
-  font-family:"Luxembourg";
-  src: url("assets/luxembourg.TTF") format("truetype");
-}
-
-@font-face {
-  font-family:"Yolda";
-  src: url("assets/YOLDA___.TTF") format("truetype");
-}
-
-@font-face {
-  font-family:"Karla";
-  src: url("assets/Karla-Regular.ttf") format("truetype");
-}
-
-@font-face {
   font-family:"MuktaVaani";
   src: url("assets/MuktaVaani-Regular.ttf") format("truetype");
 }
@@ -36,16 +21,6 @@
 @font-face {
   font-family:"Roboto";
   src: url("assets/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family:"UnifrankturMaguntia";
-  src: url("assets/UnifrankturMaguntia-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family:"broken_planew";
-  src: url("assets/broken_planew.ttf") format("truetype");
 }
 
 :root {
@@ -85,6 +60,10 @@ a {
     text-decoration: none;
 }
 
+.menu-wrapper.index a {
+    color: black;
+}
+
 .menu-wrapper a {
   color: grey;
 }
@@ -106,7 +85,8 @@ input:focus {
 
 .page-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;    
+  min-height: 100%;
 }
 
 .thanks-wrapper {
@@ -188,7 +168,7 @@ input:focus {
   margin-right: 4px;
   margin-left: -25px;
   width: 0;
-  position: relative; top: 2.5px;
+  position: relative; top: 1.5px;
 }
 
 .menu-active-span {
@@ -256,7 +236,6 @@ button:hover {
   width: 100%;	
   font-size: small;
   font-weight: lighter;
-  /*border-top: 1px solid black;*/
   padding-top: 25px;
 }
 
@@ -285,7 +264,6 @@ button:hover {
 
 #faq-content-wrapper {
   margin-bottom: 30px;
-  /*margin-top: -30px;*/
 }
 
 #work-content-wrapper {
@@ -360,28 +338,28 @@ li#id_42 {
       width: 13px;
       height: 13px;
       border-radius: 1px;
-      top: -1px;
-      left: -1px;
+      top: -2px;
+      left: -2px;
         position: relative;
         background-color: #d1d3d1;
         content: '';
         display: inline-block;
         visibility: visible;
-        border: 1px solid white;
+        border: 2px solid white;
     }
 
   input[type='radio']:checked:after {
       width: 13px;
       height: 13px;
       border-radius: 1px;
-      top: -1px;
-      left: -1px;
+      top: -2px;
+      left: -2px;
       position: relative;
       background-color: var(--kimberly);
       content: '';
       display: inline-block;
       visibility: visible;
-      border: 1px solid white;
+      border: 2px solid white;
   }
 
   button#input_1 {
@@ -711,20 +689,32 @@ li[data-type="control_image"] img {
     margin-top: initial;
   }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header-text {
-    font-size: 60px;
-  }
+@media only screen and (max-width: 325px) {
+/*  .border-strip {
+    width: 19px;
+  }*/
 
-  .menu-wrapper {
-    margin-top: 25px;
-    font-size: xx-large;
+  .tile {
+    width: 242px;
   }
+}
 
+@media only screen and (max-width: 600px) and (min-width: 350px) { 
+  .border-strip {
+    width: 17px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  #border-left {
+    background-image: url(assets/mobileBorder17.png);
+  }
+
+  #border-right {
+    background-image: url(assets/mobileBorderRight17.png);
+  }
+
   #moth-image {
       width: 100%;
   }
@@ -738,8 +728,17 @@ li[data-type="control_image"] img {
     font-size: large;
   }
 
+  .menu-active-image {
+    width: 15px;
+  }
+
+  .menu-active-image-wrapper {
+    margin-right: 2px;
+    margin-left: -22px;
+  }
+
   .tile {
-    margin: 26px;
+    margin: 30px 20px;
   }
 
   .header {
@@ -759,13 +758,20 @@ li[data-type="control_image"] img {
   }
 
   .form-all {
-    width: 300px;
+    width: 275px;
     font-size: 15px;
   }
 
-  #faq-content-wrapper,
   .booking-form-wrapper {
     margin-top: 2px;
+  }
+
+  #faq-content-wrapper {
+    margin-top: 10px;
+  }
+
+  #work-content-wrapper {
+    margin-top: 35px;
   }
 
   #newsletter-form-wrapper {
@@ -776,24 +782,44 @@ li[data-type="control_image"] img {
     margin-top: 5px;
   }
 
+  .header.faq {
+    margin-left: 0px;
+  }
+
+/*  li#id_1 {
+    text-align: center;
+  }*/
+
+/*  div#text_39 {
+    text-align: center;
+  }
+
+  div#text_42 {
+    text-align: center;
+  }  
+
+  #faq-content-wrapper {
+    text-align: center;
+  }*/
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) and (max-width: 920px) 
+{
 
-@media only screen and (max-width: 920px) {
-/*  .booking-form-wrapper {
-    margin-top: 0px;
-    margin-left: 55px;
-  }
-
-  #faq-content-wrapper {
-    margin-bottom: 30px;
-    margin-top: 0px;
-    margin-left: 55px;
-  }
+/*  .header {
+    margin-top: 0px; 
+    margin-left: 11px;
+    padding-top: 33px;
+  }*/
 
   .form-all {
-    margin-left: 33px;
-  }*/
+    width: 600px;
+  }
+
+  .border-strip {
+    width: 28px;
+  }
+
 }

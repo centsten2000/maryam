@@ -81,6 +81,7 @@
 	    (function(){
 	    	var numColumns = window.screen.width <= 400 ? 1 : 2;
 	    	var margin = window.screen.width <= 400 ? 2 : 1;
+	    	var isDefaultStyle = window.screen.width <= 350 ? false : true;
 	        new InstagramFeed({
 	            'username': 'blood.moth',
 	            'container': document.getElementById("instagram-feed1"),
@@ -88,7 +89,7 @@
 	            'display_biography': false,
 	            'display_gallery': true,
 	            'callback': null,
-	            'styling': true,
+	            'styling': isDefaultStyle,
 	            'items': 12,
 	            'items_per_row': numColumns,
 	            'margin': margin,

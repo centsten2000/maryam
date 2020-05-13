@@ -690,18 +690,46 @@ li[data-type="control_image"] img {
   }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 325px) {
-/*  .border-strip {
-    width: 19px;
-  }*/
+
+  .header.faq {
+    margin-left: 11px;
+  }
+
+  .footer-image {
+    max-width: 230px;
+  }
+
+  .form-all {
+    max-width: 230px;
+  }
+
+  div#instagram-feed1 {
+    display: flex;
+    justify-content: center;
+    width: 225px;
+  }
 
   .tile {
     width: 242px;
+  }
+
+  #instagram-feed1 img {
+    max-width: 225px;
+    margin-bottom: 20px;
+  }
+
+  .border-strip {
+    width: 18px;
   }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 350px) { 
   .border-strip {
     width: 17px;
+  }
+
+  .header.faq {
+    margin-left: 0px;
   }
 }
 
@@ -782,10 +810,6 @@ li[data-type="control_image"] img {
     margin-top: 5px;
   }
 
-  .header.faq {
-    margin-left: 0px;
-  }
-
 /*  li#id_1 {
     text-align: center;
   }*/
@@ -808,14 +832,13 @@ li[data-type="control_image"] img {
 @media only screen and (min-width: 768px) and (max-width: 920px) 
 {
 
-/*  .header {
-    margin-top: 0px; 
-    margin-left: 11px;
-    padding-top: 33px;
-  }*/
+  .tile {
+    /*margin: 30px 20px;*/
+    width: 650px;
+  }
 
   .form-all {
-    width: 600px;
+    width: 585px;
   }
 
   .border-strip {

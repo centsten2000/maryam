@@ -13,16 +13,6 @@
   src: url("assets/MuktaVaani-Light.ttf") format("truetype");
 }
 
-@font-face {
-  font-family:"OpenSans";
-  src: url("assets/OpenSans-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family:"Roboto";
-  src: url("assets/Roboto-Regular.ttf") format("truetype");
-}
-
 :root {
 	--summer-green: #8eb8a2;
 	--bay-leaf: #83b195;
@@ -92,6 +82,7 @@ input:focus {
 .thanks-wrapper {
   background-image: url("assets/yingyang.png");
   background-repeat: repeat;
+  background-size: 160px;
   height: 100%;
   opacity: 1;
   display: flex;
@@ -205,13 +196,18 @@ input:focus {
   	position: relative;
     padding: 6px 30px;
     background-color: white;
-    border: 4px solid #000;
+    border: 3px solid #000;
     text-decoration: underline;
     margin-top: 2px;
 }
 
 button:hover {
 	background-color: lightgray;
+}
+
+#newsletter-submit:hover,
+#booking-button:hover {
+  background-color: lightgray; 
 }
 
 #newsletter-submit {
@@ -226,6 +222,7 @@ button:hover {
 
 #email-input {
     border: 1px solid;
+    text-align: center;
 }
 
 .footer-wrapper {
@@ -736,11 +733,11 @@ li[data-type="control_image"] img {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   #border-left {
-    background-image: url(assets/mobileBorder17.png);
+    background-image: url(assets/Left17.png);
   }
 
   #border-right {
-    background-image: url(assets/mobileBorderRight17.png);
+    background-image: url(assets/Right17.png);
   }
 
   #moth-image {

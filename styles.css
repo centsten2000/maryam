@@ -118,9 +118,7 @@ input:focus {
 }
 
 .tile {
-  /*background-color: #f1f1f1;*/
-  /*border: 3px solid black;*/
-  /*margin: 35px;*/
+
 }
 
 .header {
@@ -182,6 +180,10 @@ input:focus {
 #moth-image {
     width: 35%;
     z-index: 0;
+}
+
+#booking-yingyang {
+  width: 200px;
 }
 
 #newsletter-form-wrapper {
@@ -806,22 +808,6 @@ li[data-type="control_image"] img {
   #booking-button {
     margin-top: 5px;
   }
-
-/*  li#id_1 {
-    text-align: center;
-  }*/
-
-/*  div#text_39 {
-    text-align: center;
-  }
-
-  div#text_42 {
-    text-align: center;
-  }  
-
-  #faq-content-wrapper {
-    text-align: center;
-  }*/
 
 }
 

@@ -108,13 +108,15 @@ input:focus {
 }
 
 #border-left {
-  background-image: url(assets/borderTile.png);
+  background-image: url(assets/maryam_pattern.png);
   background-repeat: repeat-y;
+  background-size: 28px;
 }
 
 #border-right {
-  background-image: url(assets/borderTileRight.png);
+  background-image: url(assets/maryam_patternRight.png);
   background-repeat: repeat-y;
+  background-size: 28px;
 }
 
 .tile {
@@ -745,11 +747,11 @@ li[data-type="control_image"] img {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   #border-left {
-    background-image: url(assets/Left17.png);
+    background-size: 17px;
   }
 
   #border-right {
-    background-image: url(assets/Right17.png);
+    background-size: 17px;
   }
 
   #moth-image {

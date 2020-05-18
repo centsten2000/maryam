@@ -273,6 +273,15 @@ button:hover {
   color: #000000ad;
 }
 
+.web-dev-info {
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 45px;
+  text-decoration: overline;
+}
+
 #faq-content-wrapper {
   margin-bottom: 30px;
 }

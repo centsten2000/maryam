@@ -98,6 +98,15 @@ input:focus {
   padding: 10px 20px 0px 20px;
 }
 
+.special-message {
+  text-align: center;
+  font-size: 13px;
+  background-color: var(--tall-poppy);
+  color: white;
+  padding: 15px;
+  border: 1px solid black;
+}
+
 .home-navigation-wrapper {
   font-size: 15px;
   margin: 33px;
